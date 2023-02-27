@@ -30,6 +30,7 @@ const prod = {
     //   },
     //   ['vendors.*.js', 'sw.js']
     // ),
+    new CleanWebpackPlugin({ cleanOnceBeforeBuildPatterns: [path.resolve(__dirname, '../dist/*.js')] }),
     new InjectManifest({
       swSrc: path.resolve(__dirname, '../pwa/sw.js'),
       swDest: 'sw.js'
