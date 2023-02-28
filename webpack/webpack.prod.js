@@ -2,6 +2,7 @@ const path = require('path')
 const { merge } = require('webpack-merge')
 const common = require('./webpack.common')
 const { InjectManifest } = require('workbox-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 // const WebpackObfuscator = require('webpack-obfuscator')
 
 const prod = {
